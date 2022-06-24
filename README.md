@@ -1,4 +1,4 @@
-![Project](https://github.com/nss-day-cohort-57/exomine-attic-boys/projects/2)
+[Project](https://github.com/nss-day-cohort-57/exomine-attic-boys/projects/2)
 
 # Exomine
 
