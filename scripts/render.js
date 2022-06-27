@@ -1,5 +1,7 @@
 import { FacilitiesHTML } from "./Facilities.js"
 import { MineralsHTML } from "./Minerals.js"
+import { GovernorsHTML } from "./Governors.js";
+
 export const RenderHTML = () => {
     return `
     <header class="titleHeader">
@@ -9,7 +11,7 @@ export const RenderHTML = () => {
     <article class="govCol">
         <section class="govChoice">
             <h5>Choose a governor</h5>
-            \${GovSelect()}
+            ${GovernorsHTML()}
         </section>
         <section class="colMin">
             <h5>Colony Minerals</h5>

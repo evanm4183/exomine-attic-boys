@@ -4,8 +4,8 @@ import { MineralsHTML } from "./Minerals.js"
 const facilities = getFacilities()
 
 export const FacilitiesHTML = () => {
-
-    let html = `<select name="facility">`
+    let html = "<h5>Choose a facility</h5>"
+    html += `<select name="facility">`
 
     html += '<option value="0">Choose a facility</option>'
 
