@@ -1,3 +1,5 @@
+import { FacilitiesHTML } from "./Facilities.js"
+import { MineralsHTML } from "./Minerals.js"
 import { GovernorsHTML } from "./Governors.js";
 
 export const RenderHTML = () => {
@@ -18,12 +20,11 @@ export const RenderHTML = () => {
     </article>
     
     <article class="facChoice">
-        <h5>Choose a facility</h5>
-        \${FacilityHtml()}
+        ${FacilitiesHTML()}
     </article>
     
     <article class="cartFac">
-        \${facilityMineralList()}
+        ${MineralsHTML()}
     </article>
     
     <article class="purchasedMin">
