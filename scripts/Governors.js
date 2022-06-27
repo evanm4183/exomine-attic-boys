@@ -1,7 +1,8 @@
 import { getGovernors, setColony } from "./database.js";
 
 document.addEventListener("change", event => {
-    if (event.target.id === "governors-dropdown") {
+    if (event.target.id === "governors-dropdown" && event.target.value != 0) {
+        window.alert(event.target.value)
         const governorId = parseInt(event.target.value);
         setColony(governors.find(gov => gov.id === governorId).colonyId);
 
