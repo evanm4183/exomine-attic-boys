@@ -1,8 +1,13 @@
 import { getMineralsInFacilities } from "./database.js"
 
+const allMinInFac = getMineralsInFacilities()
 
-export const MineralsHTML = (facilityId) => {
-    let html = ""
+export const MineralsHTML = facilityId => {
 
-    for ()
+    let html = "<ul>"
+
+    for (const minInFac of allMinInFac) {
+        html += `<li>
+            <input type="radio" name=`
+    }
 }

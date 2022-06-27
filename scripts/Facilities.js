@@ -7,6 +7,8 @@ const facilities = getFacilities()
 
 export const FacilitiesHTML = (govId) => {
 
+
+    MineralsHTML(facId)
 }
 
 
