@@ -8,18 +8,18 @@ const minerals = getMinerals()
 // Returns an html string of the radio buttons for Facilities.js
 export const MineralsHTML = facilityId => {
 
-    let html = "<ul>"
+    let html = ""
 
     // Iterate through the minerals in facilities table
     for (const minInFac of allMinInFac) {
         if (minInFac.facilityId === facilityId) {
             let mineralName = minerals.find(x => x.id === minInFac.mineralId).name
-            html += `<li>
-                <input type="radio" value="${minInFac.mineralId}">${minInFac.amountOwned} tons of ${mineralName}
-                </li>`
+            html += `
+                <input type="radio" name="mineralOption" value="${minInFac.mineralId}">${minInFac.amountOwned} tons of ${mineralName}
+                `
         }
     }
 
-    html += "</ul>"
+    html += ""
     return html
 }

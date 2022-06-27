@@ -20,7 +20,6 @@ export const RenderHTML = () => {
     </article>
     
     <article class="facChoice">
-        <h5>Choose a facility</h5>
         ${FacilitiesHTML()}
     </article>
     
