@@ -59,10 +59,17 @@ export const getColonyResources = () => {
     }));
 };
 
-export const getCartMineral = () => {
-    return cart.id ? cart.id : -1;
+export const getCartFacility = () => {
+    return cart.facilityId ? cart.facilityId : -1;
 }
 
+export const getCartColony = () => {
+    return cart.colonyId ? cart.colonyId : -1;
+}
+
+export const getCartMineral = () => {
+    return cart.mineralId ? cart.mineralId : -1;
+}
 //#endregion
 
 //#region Setter Functions
