@@ -10,8 +10,8 @@ document.addEventListener("change", event => {
         const colonyResourcesElement = document.querySelector(".colMin");
         const facilitiesDropdownElement = document.querySelector(".facChoice");
 
-        colonyResourcesElement.innerHTML = ColonyResourcesHTML(); // function name subject to change
-        facilitiesDropdownElement.innerHTML = FacilitiesHTML(); // function name subject to change
+        colonyResourcesElement.innerHTML = ColonyResourcesHTML();
+        facilitiesDropdownElement.innerHTML = FacilitiesHTML();
     }
 })
 
