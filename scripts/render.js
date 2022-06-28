@@ -10,25 +10,23 @@ export const RenderHTML = () => {
       <h1 class="title">Solar System Mining Marketplace</h1>
     </header>
     
-    <article class="govCol">
-        <section class="govChoice">
+    <article class="govColContainer">
+        <section class="governorsDropdownContainer">
             <h5>Choose a governor</h5>
             ${GovernorsHTML()}
         </section>
-        <section class="colMin">
+        <section class="colonyMineralsContainer">
             <h5>Colony Minerals</h5>
         </section>
     </article>
     
-    <article class="facChoice">
-    <select name="facility"><option value="0">Choose a facility</option></select>
+    <article class="facilitiesDropdownContainer">
+        <select name="facility"><option value="0">Choose a facility</option></select>
     </article>
     
-    <article class="cartFac">
-        
-    </article>
+    <article class="mineralOptionsContainer"></article>
     
-    <article class="purchasedMin">
+    <article class="cartContainer">
         <h3>Space Cart</h3>
         <section class="itemsInCart">
        

@@ -23,10 +23,10 @@ document.addEventListener("change", (event) => {
   if (event.target.name === "facility" && event.target.value !== "0") {
     setFacility(parseInt(event.target.value));
 
-    document.querySelector(".cartFac").innerHTML = MineralsHTML(
+    document.querySelector(".mineralOptionsContainer").innerHTML = MineralsHTML(
       parseInt(event.target.value)
     );
   } else if (event.target.name === "facility" && event.target.value === "0") {
-    document.querySelector(".cartFac").innerHTML = "";
+    document.querySelector(".mineralOptionsContainer").innerHTML = "";
   }
 });

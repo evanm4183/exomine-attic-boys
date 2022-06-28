@@ -1,9 +1,4 @@
-import {
-  getColonyResources,
-  getCartColony,
-  getColonies,
-  getMinerals
-} from "./database.js";
+import { getColonyResources, getCartColony,getColonies, getMinerals } from "./database.js";
 
 export const ColonyResourcesHTML = () => {
   const colonyId = getCartColony();
