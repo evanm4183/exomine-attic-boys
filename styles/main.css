@@ -1,21 +1,21 @@
-@import "details.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
 /*Typography
 --------------------------------------------------------------*/
+
 body,
 button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: "Comfortaa", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+    color: #404040;
+    font-family: "Comfortaa", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 body {
-  background-color: rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
 }
 
 h1,
@@ -24,32 +24,61 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+    font-family: "Patua One", serif;
+    letter-spacing: 2px;
 }
 
 ul {
-  list-style-type: none;
-  padding-inline-start: 0.75rem;
+    list-style-type: none;
+    padding-inline-start: 0.75rem;
 }
 
-#purchase {
-  margin: 1rem 0 2rem 2rem;
-  padding: 0.5rem;
-  background-color: rgb(111, 72, 227);
-  color: rgb(230, 220, 255);
-  font-size: 1rem;
+#fac-cart {
+    display: flex;
+    flex-direction: row;
 }
 
-.header {
-  display: flex;
+.govColContainer {
+    display: flex;
+    flex-direction: row;
 }
 
-.logo {
-  max-height: 4rem;
+.colonyMinerals {
+    align-items: center;
+    flex-basis: 55%;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
-.title {
-  text-align: center;
-  margin: 1rem 0 3rem 2rem;
+.cartContainer {
+    border: 1px dashed purple;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.mineralOptionsContainer {
+    flex-basis: 75%;
+    text-align: center;
+    border: 1px dashed purple;
+    padding: 1em;
+    margin-right: .5em;
+}
+
+.colonyMineralsContainer {
+    border: 1px dashed rgb(15, 120, 185);
+    padding: 1em;
+    flex-basis: 25%;
+    align-items: center;
+    text-align: center;
+    margin-left: .5em;
+}
+
+#buyButton {
+    padding: .2em .7em;
+    flex-wrap: wrap;
+    font-size: 1em;
+    max-width: 7.5em;
 }
