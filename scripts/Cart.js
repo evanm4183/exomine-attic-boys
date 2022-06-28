@@ -11,7 +11,7 @@ document.addEventListener("click", (event) => {
 
 export const CartHTML = () => {
     if (getCartMineral().id != -1) {
-        const currMin = getMinerals().find(x => x.id == getCartMineral().id)
+        const currMin = getMinerals().find(x => x.id == getCartMineral())
         if (currMin != undefined) {
             return `<p class="cartmin">${currMin.name ?? ""}</p>`;
         }
