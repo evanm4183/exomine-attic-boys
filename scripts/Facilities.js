@@ -10,7 +10,9 @@ export const FacilitiesHTML = () => {
     html += '<option value="0">Choose a facility</option>'
 
     for (const facility of facilities) {
-        html += `<option value ="${facility.id}">${facility.name}</option>`
+        if (facility.isActive) {
+            html += `<option value ="${facility.id}">${facility.name}</option>`
+        }
     }
 
     html += "</select>"
