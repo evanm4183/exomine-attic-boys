@@ -12,6 +12,7 @@ document.addEventListener("change", event => {
 
         colonyResourcesElement.innerHTML = ColonyResourcesHTML();
         facilitiesDropdownElement.innerHTML = FacilitiesHTML();
+        document.querySelector(".cartFac").innerHTML = ""
     }
 })
 

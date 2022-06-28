@@ -94,5 +94,4 @@ export const executePurchase = () => {
         database.colonyResources.push({ id: newid, colonyId: cart.colonyId, mineralId: cart.mineralId, amountOwned: 1 })
     }
     cart.mineralId = -1
-   // cart = {};
 }
