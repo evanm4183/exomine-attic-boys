@@ -4,6 +4,7 @@ import { getMinerals } from "./database.js"
 import { executePurchase } from "./database.js";
 import { getFacilities, getCartFacility } from "./database.js"
 import { MineralsHTML } from "./Minerals.js"
+
 document.addEventListener("click", (event) => {
     if (event.target.id == "buyButton") {
         executePurchase();

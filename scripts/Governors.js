@@ -13,13 +13,8 @@ document.addEventListener("change", (event) => {
     colonyResourcesElement.innerHTML = ColonyResourcesHTML();
     facilitiesDropdownElement.innerHTML = FacilitiesHTML();
     document.querySelector(".mineralOptionsContainer").innerHTML = "";
-  } else if (
-    event.target.id === "governors-dropdown" &&
-    event.target.value == 0
-  ) {
-    document.querySelector(
-      ".facChoice"
-    ).innerHTML = `<select name="facility"><option value="0">Choose a facility</option></select>`;
+  } else if (event.target.id === "governors-dropdown" && event.target.value == 0) {
+    document.querySelector(".facilitiesDropdownContainer").innerHTML = `<select name="facility"><option value="0">Choose a facility</option></select>`;
     document.querySelector(".mineralOptionsContainer").innerHTML = "";
     document.querySelector(".colonyMineralsContainer").innerHTML = "<h5>Colony Minerals</h5>";
   }
