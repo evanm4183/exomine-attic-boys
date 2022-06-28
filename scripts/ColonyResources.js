@@ -1,13 +1,16 @@
-import { getColonyResources, getCartColony, getMinerals } from "./database.js";
+import { getColonyResources, getCartColony, getColonies, getMinerals } from "./database.js";
 
 export const ColonyResourcesHTML = () => {
     const colonyId = getCartColony();
     const minerals = getMinerals();
-    const matchingColonies = getColonyResources().filter(col => col.id === colonyId);
-    let html = "<ul>";
+    const colonies = getColonies()
+    const colonyResources = getColonyResources()
 
-    for (const colony of matchingColonies) {
-        html += `<li>${colony.amountOwned} ton(s) of ${minerals.find(min => min.id === colony.mineralId).name}</li>`;
+    const matchingColonyResources = colonyResources.filter(resource => resource.colonyId === colonyId);
+    let html = `<h5>${colonies.find(colony => colony.id === colonyId).name ?? ""} Minerals</h5><ul>`;
+
+    for (const colonyResource of matchingColonyResources) {
+        html += `<li>${colonyResource.amountOwned} ton(s) of ${minerals.find(min => min.id === colonyResource.mineralId).name}</li>`;
     }
     html += "</ul>";
     

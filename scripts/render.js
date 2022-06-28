@@ -17,7 +17,6 @@ export const RenderHTML = () => {
         </section>
         <section class="colMin">
             <h5>Colony Minerals</h5>
-            ${ColonyResourcesHTML()}
         </section>
     </article>
     
