@@ -13,10 +13,9 @@ export const MineralsHTML = facilityId => {
     // Iterate through the minerals in facilities table
     for (const minInFac of allMinInFac) {
         if (minInFac.facilityId === facilityId) {
-            let mineralName = minerals.find(x => x.id === minInFac.mineralId).name
+            let mineralName = minerals.find(x => x.id === minInFac.mineralId).name 
             html += `
-                <input type="radio" name="mineralOption" value="${minInFac.mineralId}">${minInFac.amountOwned} tons of ${mineralName}
-                `
+                <input type="radio" name="mineralOption" value="${minInFac.mineralId}">${minInFac.amountOwned} tons of ${mineralName}`
         }
     }
 
