@@ -8,8 +8,8 @@ document.addEventListener("click", (event) => {
     if (event.target.id == "buyButton") {
         executePurchase();
         document.querySelector('.itemsInCart').innerHTML = ""
-        document.querySelector('.cartFac').innerHTML = MineralsHTML(getCartFacility())
-        document.querySelector('.colMin').innerHTML = ColonyResourcesHTML()
+        document.querySelector('.mineralOptionsContainer').innerHTML = MineralsHTML(getCartFacility())
+        document.querySelector('.colonyMineralsContainer').innerHTML = ColonyResourcesHTML()
     }
 });
 
