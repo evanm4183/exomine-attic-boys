@@ -17,7 +17,7 @@ export const FacilitiesHTML = () => {
 
     html += "</select>"
     return html
-    
+
 }
 
 
@@ -26,6 +26,6 @@ document.addEventListener("change", (event) => {
         setFacility(parseInt(event.target.value))
 
         document.querySelector('.cartFac').innerHTML = MineralsHTML(parseInt(event.target.value))
-        
+
     }
 })

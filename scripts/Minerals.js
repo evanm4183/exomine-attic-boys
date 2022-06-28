@@ -1,4 +1,4 @@
-import { getMineralsInFacilities, getMinerals } from "./database.js"
+import { getMineralsInFacilities, getMinerals, setMineral } from "./database.js"
 
 // Retrieve the relevant tables
 const allMinInFac = getMineralsInFacilities()
@@ -22,3 +22,8 @@ export const MineralsHTML = facilityId => {
     html += ""
     return html
 }
+document.addEventListener("change", (event) => {
+    if (event.target.name === "mineralOption") {
+        setMineral(parseInt(event.target.value))
+    }
+})
