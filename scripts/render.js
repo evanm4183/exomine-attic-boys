@@ -2,6 +2,7 @@ import { FacilitiesHTML } from "./Facilities.js"
 import { MineralsHTML } from "./Minerals.js"
 import { GovernorsHTML } from "./Governors.js";
 import { CartHTML } from "./Cart.js";
+import { ColonyResourcesHTML } from "./ColonyResources.js";
 
 export const RenderHTML = () => {
     return `
@@ -16,7 +17,7 @@ export const RenderHTML = () => {
         </section>
         <section class="colMin">
             <h5>Colony Minerals</h5>
-            \${coloniesHtml()}
+            ${ColonyResourcesHTML()}
         </section>
     </article>
     
@@ -25,13 +26,13 @@ export const RenderHTML = () => {
     </article>
     
     <article class="cartFac">
-        ${MineralsHTML()}
+        
     </article>
     
     <article class="purchasedMin">
         <h3>Space Cart</h3>
         <section class="itemsInCart">
-        ${CartHTML()}
+       
         </section>
         <button id="buyButton">Purchase Mineral</button>
     </article>

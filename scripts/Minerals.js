@@ -1,13 +1,15 @@
+import { CartHTML } from "./Cart.js"
 import { getMineralsInFacilities, getMinerals, setMineral } from "./database.js"
 
 // Retrieve the relevant tables
-const allMinInFac = getMineralsInFacilities()
-const minerals = getMinerals()
+
+
 
 // Function that builds the radio buttons for the minerals in facilities with a given facility id
 // Returns an html string of the radio buttons for Facilities.js
 export const MineralsHTML = facilityId => {
-
+    const allMinInFac = getMineralsInFacilities()
+    const minerals = getMinerals()
     let html = ""
 
     // Iterate through the minerals in facilities table
@@ -25,5 +27,6 @@ export const MineralsHTML = facilityId => {
 document.addEventListener("change", (event) => {
     if (event.target.name === "mineralOption") {
         setMineral(parseInt(event.target.value))
+        document.querySelector('.itemsInCart').innerHTML = CartHTML()
     }
 })
