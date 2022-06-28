@@ -68,9 +68,9 @@ export const getCartColony = () => {
 }
 
 export const getCartMineral = () => {
-    return cart.mineralId ? cart.mineralId : -1;
-}
-//#endregion
+        return cart.mineralId ? cart.mineralId : -1;
+    }
+    //#endregion
 
 //#region Setter Functions
 export const setFacility = (id) => {
@@ -85,7 +85,7 @@ export const setMineral = (id) => {
 //#endregion
 
 export const executePurchase = () => {
-    database.mineralsInFacility.find(x => x.facilityId === cart.facilityId && x.mineralId == cart.mineralId).amountOwned -= 1;
+    database.mineralsInFacility.find(x => x.facilityId == cart.facilityId && x.mineralId == cart.mineralId).amountOwned -= 1;
     const hasResource = database.colonyResources.find(x => x.mineralId == cart.mineralId && x.colonyId == cart.colonyId) ? true : false
     if (hasResource) {
         database.colonyResources.find(x => x.mineralId == cart.mineralId && x.colonyId == cart.colonyId).amountOwned += 1;
