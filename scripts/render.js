@@ -1,6 +1,7 @@
 import { FacilitiesHTML } from "./Facilities.js"
 import { MineralsHTML } from "./Minerals.js"
 import { GovernorsHTML } from "./Governors.js";
+import { CartHTML } from "./Cart.js";
 
 export const RenderHTML = () => {
     return `
@@ -30,9 +31,9 @@ export const RenderHTML = () => {
     <article class="purchasedMin">
         <h3>Space Cart</h3>
         <section class="itemsInCart">
-        \${displayCart()}
+        ${CartHTML()}
         </section>
         <button id="buyButton">Purchase Mineral</button>
     </article>
     `;
-    }
+}
