@@ -1,11 +1,11 @@
-import { FacilitiesHTML } from "./Facilities.js"
-import { MineralsHTML } from "./Minerals.js"
+import { FacilitiesHTML } from "./Facilities.js";
+import { MineralsHTML } from "./Minerals.js";
 import { GovernorsHTML } from "./Governors.js";
 import { CartHTML } from "./Cart.js";
 import { ColonyResourcesHTML } from "./ColonyResources.js";
 
 export const RenderHTML = () => {
-    return `
+  return `
     <header class="titleHeader">
       <h1 class="title">Solar System Mining Marketplace</h1>
     </header>
@@ -21,7 +21,7 @@ export const RenderHTML = () => {
     </article>
     
     <article class="facChoice">
-        ${FacilitiesHTML()}
+    <select name="facility"><option value="0">Choose a facility</option></select>
     </article>
     
     <article class="cartFac">
@@ -36,4 +36,4 @@ export const RenderHTML = () => {
         <button id="buyButton">Purchase Mineral</button>
     </article>
     `;
-}
+};
