@@ -11,17 +11,17 @@ export const RenderHTML = () => {
     </header>
     <article class="govColContainer">
         <section class="governorsDropdownContainer">
-            <h5>Choose a governor</h5>
+            <h3>Choose a governor</h3>
             ${GovernorsHTML()}
         </section>
 
 
         <section class="colonyMineralsContainer">
-            <h5>Colony Minerals</h5>
+            <h3>Colony Minerals</h3>
         </section>
     </article>
     <article class="facilitiesDropdownContainer">
-    <h5>Choose a facility</h5>
+    <h3 style="text-align: start;">Choose a facility</h3>
     <select name="facility"><option value="0">Choose a facility</option></select>
     </article>
     <div id="fac-cart">
