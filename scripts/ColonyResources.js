@@ -9,9 +9,9 @@ export const ColonyResourcesHTML = () => {
   const matchingColonyResources = colonyResources.filter(
     (resource) => resource.colonyId === colonyId
   );
-  let html = `<h5>${
+  let html = `<h3>${
     colonies.find((colony) => colony.id === colonyId).name ?? ""
-  } Minerals</h5><ul>`;
+  } Minerals</h3><ul>`;
 
   for (const colonyResource of matchingColonyResources) {
     if (colonyResource.amountOwned > 0) {

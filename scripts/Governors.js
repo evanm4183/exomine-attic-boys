@@ -7,16 +7,12 @@ document.addEventListener("change", (event) => {
         const governorId = parseInt(event.target.value);
         setColony(governors.find((gov) => gov.id === governorId).colonyId);
 
-        const colonyResourcesElement = document.querySelector(".colonyMineralsContainer");
-        const facilitiesDropdownElement = document.querySelector(".facilitiesDropdownContainer");
-
-        colonyResourcesElement.innerHTML = ColonyResourcesHTML();
-        facilitiesDropdownElement.innerHTML = FacilitiesHTML();
-        //document.querySelector(".mineralOptionsContainer").innerHTML = "";
+        document.querySelector(".colonyMineralsContainer").innerHTML = ColonyResourcesHTML();
+        document.querySelector(".facilitiesDropdownContainer").innerHTML = FacilitiesHTML();
     } else if (event.target.id === "governors-dropdown" && event.target.value == 0) {
-        document.querySelector(".facilitiesDropdownContainer").innerHTML = `<h5>Choose a facility</h5><select name="facility"><option value="0">Choose a facility</option></select>`;
-        //document.querySelector(".mineralOptionsContainer").innerHTML = "";
-        document.querySelector(".colonyMineralsContainer").innerHTML = "<h5>Colony Minerals</h5>";
+        document.querySelector(".facilitiesDropdownContainer").innerHTML = `<h3 style="text-align: start;">Choose a facility</h3><select name="facility"><option value="0">Choose a facility</option></select>`;
+        document.querySelector(".mineralOptionsContainer").innerHTML = "<h3>Facility Minerals</h3>";
+        document.querySelector(".colonyMineralsContainer").innerHTML = "<h3>Colony Minerals</h3>";
     }
 });
 

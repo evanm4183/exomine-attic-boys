@@ -4,7 +4,7 @@ import { MineralsHTML } from "./Minerals.js";
 const facilities = getFacilities();
 
 export const FacilitiesHTML = () => {
-    let html = "<h5>Choose a facility</h5>";
+    let html = '<h3 style="text-align: start;" >Choose a facility</h3>';
     html += `<select name="facility">`;
 
     html += '<option value="0">Choose a facility</option>';
